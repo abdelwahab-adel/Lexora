@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0F3D2E">
-<title>العدل الراقي | مكتب محاماة عالمي رائد — استشارات وتمثيل قانوني فاخر</title>
-<meta name="description" content="مكتب العدل الراقي للمحاماة والاستشارات القانونية. خدمات قانونية فاخرة للأفراد والشركات والمستثمرين بخبرة تتجاوز 20 عاماً — تقاضي، تحكيم، عقود، ملكية فكرية، استثمار.">
+<title>رواد القانون | مكتب محاماة عالمي رائد — استشارات وتمثيل قانوني فاخر</title>
+<meta name="description" content="مكتب رواد القانون للمحاماة والاستشارات القانونية. خدمات قانونية فاخرة للأفراد والشركات والمستثمرين بخبرة تتجاوز 20 عاماً — تقاضي، تحكيم، عقود، ملكية فكرية، استثمار.">
 <meta name="keywords" content="مكتب محاماة فاخر, استشارات قانونية, تقاضي, تحكيم, عقود, ملكية فكرية, استثمار, محامي, الرياض, السعودية">
-<meta name="author" content="مكتب العدل الراقي للمحاماة والاستشارات القانونية">
+<meta name="author" content="مكتب رواد القانون للمحاماة والاستشارات القانونية">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
-<meta property="og:title" content="مكتب العدل الراقي | خدمات قانونية فاخرة">
+<meta property="og:title" content="مكتب رواد القانون | خدمات قانونية فاخرة">
 <meta property="og:description" content="تمثيل قانوني رفيع المستوى للشركات والأفراد بخبرة تتجاوز 20 عاماً.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="مكتب العدل الراقي — Premium Legal Services">
+<meta name="twitter:title" content="مكتب رواد القانون — Premium Legal Services">
 <meta name="twitter:description" content="خبرة قانونية تتجاوز 20 عاماً مع التزام صارم بالسرية والنتائج.">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F3D2E'/%3E%3Cpath d='M32 10v40M20 18h24M18 50h28' stroke='%23C8A24D' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M22 18l-8 18h16L22 18zm20 0l-8 18h16L42 18z' fill='none' stroke='%23C8A24D' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -224,17 +224,25 @@ section{padding:var(--s7) 0;position:relative}
 .hdr-cta{padding:13px 22px !important;border-radius:var(--r-sm);background:var(--grad-gold);color:#181206;font-weight:800;font-size:13.5px;transition:var(--t-fast);box-shadow:0 8px 18px rgba(200,162,77,.22)}
 .hdr-cta:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(200,162,77,.35)}
 
-#hamburger{display:none;flex-direction:column;gap:5px;width:34px;height:34px;z-index:200;align-items:center;justify-content:center}
+#hamburger{display:none;flex-direction:column;gap:5px;width:44px;height:44px;z-index:200;align-items:center;justify-content:center;position:relative}
 #hamburger span{height:2px;width:24px;background:#fff;border-radius:2px;transition:var(--t-fast)}
 #hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 #hamburger.open span:nth-child(2){opacity:0}
 #hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-#mobile-menu{position:fixed;inset:0;z-index:55;background:var(--grad-navy);display:flex;flex-direction:column;justify-content:center;transform:translateY(-100%);opacity:0;visibility:hidden;transition:transform .5s var(--ease),opacity .4s ease}
-#mobile-menu.open{transform:translateY(0);opacity:1;visibility:visible}
-#mobile-menu a{display:block;font-size:22px;font-weight:700;color:#fff;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:var(--t-fast)}
-#mobile-menu a:hover{color:var(--gold-light);padding-right:8px}
-#mobile-menu .btn-primary{margin-top:22px;width:fit-content}
+/* Floating popup mobile menu */
+#mobile-menu{position:fixed;top:84px;left:50%;z-index:150;width:min(92vw,360px);max-height:calc(100vh - 110px);overflow-y:auto;-webkit-overflow-scrolling:touch;background:rgba(255,255,255,.92);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid rgba(255,255,255,.6);border-radius:22px;box-shadow:0 24px 60px rgba(7,33,24,.28),0 6px 18px rgba(7,33,24,.14);padding:18px;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(-50%) translateY(-14px) scale(.94);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s}
+#mobile-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0) scale(1)}
+.mnav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.mnav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 8px;min-height:86px;border-radius:16px;background:rgba(15,61,46,.045);border:1px solid rgba(15,61,46,.07);color:var(--primary);font-weight:700;font-size:12.5px;text-align:center;transition:var(--t-fast);-webkit-tap-highlight-color:transparent}
+.mnav-item i{font-size:19px;color:var(--gold-dark);transition:var(--t-fast)}
+.mnav-item:hover{background:rgba(200,162,77,.14);border-color:rgba(200,162,77,.3);transform:translateY(-2px)}
+.mnav-item:active{transform:scale(.96)}
+.mnav-item.active{background:var(--grad-gold);border-color:transparent;color:#181206}
+.mnav-item.active i{color:#181206}
+#mobile-menu .mnav-cta{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;width:100%;padding:14px;border-radius:14px;font-size:14px}
+@media(max-width:380px){#mobile-menu{width:94vw;padding:14px}.mnav-item{min-height:78px;font-size:12px}.mnav-item i{font-size:17px}}
+@media(max-height:560px) and (orientation:landscape){#mobile-menu{top:70px;max-height:calc(100vh - 90px)}}
 
 /* Search Popup */
 #search-popup{position:fixed;inset:0;z-index:300;display:grid;place-items:start center;background:rgba(7,33,24,.92);backdrop-filter:blur(18px);padding:24px;padding-top:12vh;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
@@ -623,6 +631,13 @@ section{padding:var(--s7) 0;position:relative}
 .accred-badge{border:1.5px solid var(--border-dark);border-radius:var(--r-pill);padding:16px 28px;font-size:13.5px;font-weight:700;color:rgba(255,255,255,.88);background:rgba(255,255,255,.02);transition:var(--t-fast);display:inline-flex;align-items:center;gap:10px}
 .accred-badge:hover{border-color:var(--gold);background:rgba(200,162,77,.07);color:#fff;transform:translateY(-2px)}
 .accred-badge i{color:var(--gold)}
+.partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:40px}
+.partner-badge{border:1.5px solid var(--border);border-radius:var(--r-md);padding:20px 14px;text-align:center;background:#fff;transition:var(--t-fast);display:flex;align-items:center;justify-content:center;min-height:96px}
+.partner-badge img{max-width:100%;max-height:52px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.72;transition:var(--t-fast)}
+.partner-badge:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.partner-badge:hover img{filter:grayscale(0);opacity:1}
+@media(max-width:960px){.partners-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.partners-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ════════════════════════════════════════════════════════════════
    26. FAQ
@@ -828,6 +843,8 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 .pmodal-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:38px;margin-bottom:28px}
 .pmodal-label{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:11px}
 .pmodal-desc{font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:21px}
+.pmodal-extra{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:520px){.pmodal-extra{grid-template-columns:1fr}}
 .pmodal-tags{display:flex;gap:8px;flex-wrap:wrap}
 .pmodal-tag{font-size:11px;font-weight:700;background:var(--gold-ultra);color:var(--gold-dark);padding:6px 13px;border-radius:var(--r-pill)}
 .pmodal-meta-box{background:var(--bg-elevated);border-radius:var(--r-md);padding:23px}
@@ -850,7 +867,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 #scroll-top.visible{opacity:1;visibility:visible;transform:none}
 #scroll-top:hover{background:var(--gold);color:#181206;transform:translateY(-3px)}
 
-.wa-fab-wrap{position:fixed;bottom:28px;right:28px;z-index:80;display:flex;align-items:center;gap:12px}
+.wa-fab-wrap{position:fixed;bottom:28px;right:28px;z-index:80;display:flex;align-items:center;gap:12px;transition:opacity .3s ease,visibility .3s ease}
 .wa-fab{width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:var(--shadow-lg);transition:var(--t-fast)}
 .wa-fab:hover{transform:scale(1.08)}
 .wa-fab-pulse{position:absolute;width:60px;height:60px;border-radius:50%;background:#25D366;animation:waPulse 1.8s ease-out infinite;z-index:-1}
@@ -865,6 +882,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 @media(max-width:1180px){
   #nav-links,.hdr-cta,#hamburger-visible{display:none}
   #hamburger{display:flex}
+  #hdr{background:rgba(15,61,46,.92);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);box-shadow:0 6px 20px rgba(0,0,0,.15)}
 }
 @media(max-width:1080px){
   .hero-stats{grid-template-columns:repeat(2,1fr)}
@@ -898,6 +916,19 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   .section-title{font-size:clamp(1.8rem,9vw,2.6rem)}
   .packages-grid{grid-template-columns:1fr}
   .scroll-top,.wa-fab{width:50px;height:50px}
+  .hdr-inner{gap:10px}
+  .wordmark{gap:9px;min-width:0;flex-shrink:1}
+  .wm-crest{width:38px;height:38px;flex-shrink:0}
+  .wm-crest svg{width:23px;height:23px}
+  .wm-text{min-width:0}
+  .wm-text .name{font-size:clamp(13px,4.2vw,17px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:44vw}
+  .hdr-actions{gap:6px}
+  .icon-btn{width:38px;height:38px}
+  #hamburger{width:38px;height:38px}
+}
+@media(max-width:340px){
+  .wm-text .name{max-width:34vw}
+  #searchOpen{display:none}
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -915,24 +946,18 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "name": "مكتب العدل الراقي للمحاماة والاستشارات القانونية",
+  "name": "مكتب رواد القانون للمحاماة والاستشارات القانونية",
   "alternateName": "Al Adel Al Raqi Law Firm",
   "description": "مكتب محاماة فاخر يقدم خدمات قانونية متكاملة للأفراد والشركات والمستثمرين، بخبرة تتجاوز 20 عاماً في التقاضي، التحكيم، العقود، الملكية الفكرية، الاستثمار.",
   "url": "https://www.aladel-legal.sa",
   "logo": "https://www.aladel-legal.sa/logo.png",
   "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85",
-  "telephone": "+966-11-204-5900",
-  "email": "consultation@aladel-legal.com",
+  "telephone": "",
+  "email": "",
   "priceRange": "$$$",
   "areaServed": "SA",
-  "address": {"@type":"PostalAddress","streetAddress":"طريق الملك فهد، حي العليا","addressLocality":"الرياض","addressRegion":"الرياض","addressCountry":"SA","postalCode":"11564"},
-  "geo": {"@type":"GeoCoordinates","latitude":24.7019,"longitude":46.6862},
+  "address": {"@type":"PostalAddress","streetAddress":"طريق الملك فهد، حي العليا","addressLocality":"الرياض","addressRegion":"الرياض","addressCountry":"SA"},
   "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"18:00"}],
-  "sameAs": [
-    "https://www.linkedin.com/company/aladel-legal",
-    "https://twitter.com/aladel_legal",
-    "https://instagram.com/aladel_legal"
-  ],
   "serviceType": ["التقاضي","التحكيم","القانون التجاري","العقود","تأسيس الشركات","الملكية الفكرية","القضايا الجنائية","الأحوال الشخصية","الاستثمار","قضايا العمل"],
   "founder": {"@type":"Person","name":"عبدالعزيز الراشد","jobTitle":"الشريك المدير"}
 }
@@ -945,7 +970,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 <!-- ════════════════ UI PRIMITIVES ════════════════ -->
 <div id="loader" aria-hidden="true">
   <div class="loader-crest">ع</div>
-  <span class="loader-label">عدالة راقية</span>
+  <span class="loader-label">رواد القانون</span>
 </div>
 <div id="scroll-progress" aria-hidden="true"></div>
 <div class="mouse-glow" aria-hidden="true"></div>
@@ -964,13 +989,12 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 <header id="hdr" role="banner">
   <div class="container">
     <div class="hdr-inner">
-      <a href="#hero" class="wordmark" aria-label="مكتب العدل الراقي - الصفحة الرئيسية">
+      <a href="#hero" class="wordmark" aria-label="مكتب رواد القانون - الصفحة الرئيسية">
         <span class="wm-crest" aria-hidden="true">
           <svg viewBox="0 0 56 56"><rect x="1" y="1" width="54" height="54" rx="14"></rect><path d="M28 12v30M17 20h22M15 42h26M18 20l-7 16h14L18 20zm20 0l-7 16h14L38 20z"></path></svg>
         </span>
         <span class="wm-text">
-          <span class="name">العدل الراقي</span>
-          <span class="sub">PREMIUM LEGAL CONSULTANCY</span>
+          <span class="name">رواد القانون</span>
         </span>
       </a>
 
@@ -995,16 +1019,16 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   </div>
 
   <div id="mobile-menu" role="navigation" aria-label="قائمة الجوال">
-    <div class="container">
-      <a href="#about">من نحن</a>
-      <a href="#practice">مجالات الممارسة</a>
-      <a href="#team">فريقنا</a>
-      <a href="#cases">دراسات الحالة</a>
-      <a href="#testimonials">آراء العملاء</a>
-      <a href="#insights">المقالات</a>
-      <a href="#contact">تواصل</a>
-      <a href="#contact" class="btn-primary"><i class="fa-solid fa-calendar-check"></i> احجز استشارة</a>
+    <div class="mnav-grid">
+      <a href="#about" class="mnav-item"><i class="fa-solid fa-building" aria-hidden="true"></i><span>من نحن</span></a>
+      <a href="#practice" class="mnav-item"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span>مجالات الممارسة</span></a>
+      <a href="#team" class="mnav-item"><i class="fa-solid fa-users" aria-hidden="true"></i><span>فريقنا</span></a>
+      <a href="#cases" class="mnav-item"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span>دراسات الحالة</span></a>
+      <a href="#testimonials" class="mnav-item"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i><span>آراء العملاء</span></a>
+      <a href="#insights" class="mnav-item"><i class="fa-solid fa-newspaper" aria-hidden="true"></i><span>المقالات</span></a>
+      <a href="#contact" class="mnav-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>تواصل</span></a>
     </div>
+    <a href="#contact" class="btn-primary mnav-cta"><i class="fa-solid fa-calendar-check"></i> احجز استشارة</a>
   </div>
 </header>
 
@@ -1053,11 +1077,10 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
     <div class="container">
       <div class="hero-inner">
         <div class="hero-badge"><span class="dot" aria-hidden="true"></span> مكتب محاماة معتمد — الرياض</div>
-        <h1 class="hero-title">نحمي حقوقكم <em>بخبرة قانونية</em><br>تتجاوز 20 عاماً</h1>
-        <p class="hero-desc">خدمات قانونية فاخرة للأفراد والشركات والمستثمرين، بفريق من المحامين المتخصصين في التقاضي، التحكيم، العقود، الملكية الفكرية، والاستثمار الدولي. التزام صارم بالسرية، دقة في الصياغة، حسم في النتائج.</p>
+        <h1 class="hero-title">التميّز في <em>المرافعة</em><br>والدقة في الاستشارة</h1>
+        <p class="hero-desc">شركة محاماة رائدة تُقدّم حلولاً قانونية متكاملة بمستوى عالٍ من الاحترافية والالتزام.</p>
         <div class="hero-btns">
-          <a href="#contact" class="btn-primary ripple magnetic"><i class="fa-solid fa-calendar-check"></i> احجز استشارة</a>
-          <a href="tel:+966112045900" class="btn-ghost magnetic"><i class="fa-solid fa-phone"></i> تواصل الآن</a>
+          <a href="#contact" class="btn-primary ripple magnetic">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
         </div>
         <div class="hero-trust">
           <div><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span>تقييم 4.9 من 250+ عميل</span></div>
@@ -1140,15 +1163,15 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
     <div class="about-grid">
       <div class="about-vis rv-l">
         <div class="about-img-main-wrap">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=84" alt="فريق مكتب العدل الراقي أثناء اجتماع استشاري" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=84" alt="فريق مكتب رواد القانون أثناء اجتماع استشاري" loading="lazy">
         </div>
-        <img class="about-img-secondary" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80" alt="قاعة اجتماعات مكتب العدل الراقي" loading="lazy">
+        <img class="about-img-secondary" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80" alt="قاعة اجتماعات مكتب رواد القانون" loading="lazy">
         <div class="about-badge" aria-hidden="true"><b>20+</b><span>سنة خبرة</span></div>
       </div>
       <div class="about-body rv-r">
         <div class="eyebrow">من نحن</div>
         <h2 id="about-heading" class="section-title" style="margin-bottom:0">قصة بُنيت<br><em>على الثقة والنتائج</em></h2>
-        <p class="about-p">تأسس مكتب العدل الراقي عام 2004 برؤية واضحة: تقديم خدمة قانونية فاخرة تجمع بين العمق المعرفي والحس الاستراتيجي. اليوم، يضم المكتب نخبة من المحامين المتخصصين الذين يمثلون الأفراد والشركات والمستثمرين في أعقد القضايا وأكثرها حساسية في المملكة العربية السعودية والمنطقة.</p>
+        <p class="about-p">تأسس مكتب رواد القانون عام 2004 برؤية واضحة: تقديم خدمة قانونية فاخرة تجمع بين العمق المعرفي والحس الاستراتيجي. اليوم، يضم المكتب نخبة من المحامين المتخصصين الذين يمثلون الأفراد والشركات والمستثمرين في أعقد القضايا وأكثرها حساسية في المملكة العربية السعودية والمنطقة.</p>
 
         <div class="about-tabs" role="tablist" aria-label="تعريف المكتب">
           <button class="tab-btn active" data-tab="vision" role="tab" aria-selected="true">رؤيتنا</button>
@@ -1173,7 +1196,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   <div class="container">
     <div class="tl-head rv">
       <div class="eyebrow wh" style="margin-bottom:14px;justify-content:center">مسيرتنا المهنية</div>
-      <h2 id="timeline-heading" class="section-title wh">محطات فارقة<br><em>في مسيرة العدل الراقي</em></h2>
+      <h2 id="timeline-heading" class="section-title wh">محطات فارقة<br><em>في مسيرة رواد القانون</em></h2>
     </div>
     <div class="tl-track">
       <div class="tl-item rv" style="transition-delay:.1s"><div class="tl-card"><div class="tl-year">2004</div><div class="tl-title">التأسيس</div><div class="tl-desc">انطلاق الممارسة القانونية بتركيز على التقاضي التجاري والمدني.</div></div><div class="tl-dot-wrap"><div class="tl-dot"></div></div><div></div></div>
@@ -1203,7 +1226,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
         </div>
       </div>
       <figure class="partner-portrait rv-r">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1100&q=84" alt="صورة احترافية للمحامي عبدالعزيز الراشد، الشريك المدير" loading="lazy">
+        <img src="partner-abdulaziz.jpg" alt="صورة احترافية للمحامي عبدالعزيز الراشد، الشريك المدير" loading="lazy">
         <figcaption>
           <strong>عبدالعزيز الراشد</strong>
           <span>الشريك المدير · رئيس فريق التقاضي التجاري</span>
@@ -1245,7 +1268,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 <!-- ════════════════ WHY US ════════════════ -->
 <section id="why" aria-labelledby="why-heading">
   <div class="container">
-    <div class="eyebrow wh rv">لماذا العدل الراقي</div>
+    <div class="eyebrow wh rv">لماذا رواد القانون</div>
     <h2 id="why-heading" class="section-title wh rv" style="transition-delay:.1s;max-width:560px">ما يميّزنا عن<br><em>غيرنا من المكاتب</em></h2>
     <div class="why-grid rv" style="transition-delay:.15s" id="why-grid"></div>
   </div>
@@ -1326,6 +1349,17 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
     <div class="accred-grid rv" style="transition-delay:.15s" id="accred-grid"></div>
   </div>
 </section>
+<!-- ════════════════ SUCCESS PARTNERS ════════════════ -->
+<section id="partners" aria-labelledby="partners-heading">
+  <div class="container">
+    <div class="eyebrow rv" style="margin-bottom:14px;justify-content:center">علاقاتنا المؤسسية</div>
+    <h2 id="partners-heading" class="section-title rv" style="transition-delay:.1s;text-align:center;margin:0 auto 12px;max-width:560px">شركاء<br><em>النجاح</em></h2>
+    <p class="section-desc rv" style="transition-delay:.15s;text-align:center;margin:0 auto 20px">
+      نفخر بثقة نخبة من المؤسسات والجهات الحكومية والخاصة الرائدة في المملكة، ونعتز بشراكاتنا المؤسسية طويلة الأمد.
+    </p>
+    <div class="partners-grid rv" style="transition-delay:.2s" id="partners-grid"></div>
+  </div>
+</section>
 <!-- ════════════════ ENGAGEMENT PACKAGES ════════════════ -->
 <section id="packages" aria-labelledby="packages-heading">
   <div class="container">
@@ -1364,7 +1398,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
       <p class="cta-desc">أرسل ملخص قضيتك وسيتم توجيهك إلى المحامي الأنسب وفق نطاق المسألة وحساسيتها، خلال 30 دقيقة.</p>
       <div class="cta-btns">
         <a href="#contact" class="btn-primary ripple"><i class="fa-solid fa-calendar-check"></i> احجز استشارتك الآن</a>
-        <a href="tel:+966112045900" class="btn-ghost"><i class="fa-solid fa-phone"></i> اتصل بنا الآن</a>
+        <a href="#contact" class="btn-ghost"><i class="fa-solid fa-phone"></i> اتصل بنا الآن</a>
       </div>
     </div>
   </div>
@@ -1392,9 +1426,9 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
     <div class="contact-grid">
       <div class="contact-info-card rv-l">
         <div class="info-block"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><div class="info-label">العنوان</div><div class="info-val">طريق الملك فهد، حي العليا<br>الرياض 11564</div></div></div>
-        <div class="info-block"><i class="fa-solid fa-phone" aria-hidden="true"></i><div><div class="info-label">الهاتف الرئيسي</div><div class="info-val" dir="ltr" style="text-align:right">+966 11 204 5900</div></div></div>
-        <div class="info-block"><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><div class="info-label">البريد الإلكتروني</div><div class="info-val">consultation@aladel-legal.com</div></div></div>
-        <div class="info-block"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><div><div class="info-label">واتساب المكتب</div><div class="info-val" dir="ltr" style="text-align:right">+966 11 204 5900</div></div></div>
+        <div class="info-block"><i class="fa-solid fa-phone" aria-hidden="true"></i><div><div class="info-label">الهاتف الرئيسي</div><div class="info-val" dir="ltr" style="text-align:right">[أضف رقم الهاتف]</div></div></div>
+        <div class="info-block"><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><div class="info-label">البريد الإلكتروني</div><div class="info-val">[أضف البريد الإلكتروني]</div></div></div>
+        <div class="info-block"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><div><div class="info-label">واتساب المكتب</div><div class="info-val" dir="ltr" style="text-align:right">[أضف رقم واتساب]</div></div></div>
         <div class="info-block"><i class="fa-regular fa-clock" aria-hidden="true"></i><div><div class="info-label">ساعات العمل</div><div class="info-val">الأحد – الخميس: 9 ص – 6 م<br>الجمعة – السبت: مغلق</div></div></div>
         <div class="contact-socials" aria-label="حسابات التواصل الاجتماعي">
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -1464,10 +1498,10 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
       <h2 class="section-title" style="margin:0 auto">زورونا في<br><em>الرياض</em></h2>
     </div>
     <div class="map-card rv" style="transition-delay:.1s" aria-label="خريطة موقع المكتب">
-      <iframe title="خريطة موقع مكتب العدل الراقي في الرياض" loading="lazy" src="https://www.google.com/maps?q=Riyadh%20King%20Fahd%20Road%20Olaya&output=embed"></iframe>
+      <iframe title="خريطة موقع مكتب رواد القانون في الرياض" loading="lazy" src="" style="background:var(--bg-elevated)"></iframe>
       <div class="map-floating">
         <strong><i class="fa-solid fa-building-columns"></i> المقر الرئيسي</strong>
-        <span>طريق الملك فهد، حي العليا، الرياض 11564<br>بموعد مسبق لضمان تخصيص المحامي المناسب</span>
+        <span>طريق الملك فهد، حي العليا، الرياض<br>بموعد مسبق لضمان تخصيص المحامي المناسب</span>
       </div>
     </div>
   </div>
@@ -1481,7 +1515,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
       <p style="color: #000;" class="cta-desc">فريقنا مستعد لحماية حقوقك وتقديم أفضل الحلول القانونية، بخبرة تتجاوز 20 عاماً في خدمة الأفراد والشركات والمستثمرين عبر التقاضي والتحكيم والاستشارات القانونية المتخصصة.</p>
       <div class="cta-btns" style="color: #000;">
         <a style="color: #000;"  href="#contact" class="btn-primary ripple"><i class="fa-solid fa-calendar-check"></i> احجز استشارة</a>
-        <a style="color: #000" href="https://wa.me/966112045900" target="_blank" rel="noopener" class="btn-ghost"><i style="color: #E3C98D;" class="fa-brands fa-whatsapp"></i> واتساب الآن</a>
+        <a style="color: #000" href="#contact" class="btn-ghost"><i style="color: #E3C98D;" class="fa-brands fa-whatsapp"></i> واتساب الآن</a>
       </div>
       <div style="color: #000;" class="cta-trust">
         <div style="color: #000;" class="cta-trust-item"><i class="fa-solid fa-user-shield" aria-hidden="true"></i> سرية تامة لجميع القضايا</div>
@@ -1539,6 +1573,16 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
           <div class="pmodal-label">نبذة عن القضية</div>
           <p class="pmodal-desc" id="cmodal-desc"></p>
           <div class="pmodal-tags" id="cmodal-tags"></div>
+          <div class="pmodal-extra">
+            <div>
+              <div class="pmodal-label" style="margin-top:22px">التحدي القانوني</div>
+              <p class="pmodal-desc" id="cmodal-challenge"></p>
+            </div>
+            <div>
+              <div class="pmodal-label" style="margin-top:22px">استراتيجية المكتب</div>
+              <p class="pmodal-desc" id="cmodal-approach"></p>
+            </div>
+          </div>
         </div>
         <div class="pmodal-meta-box">
           <div class="pmeta-item"><i class="fas fa-building-columns" aria-hidden="true"></i><div><div class="pmeta-lbl">نوع العميل</div><div class="pmeta-val" id="cmodal-client"></div></div></div>
@@ -1556,18 +1600,51 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   </div>
 </div>
 
+<!-- ════════════════ PRACTICE AREA INFO MODAL ════════════════ -->
+<div id="practice-modal" class="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal2-title" aria-hidden="true">
+  <div class="pmodal-backdrop" onclick="closePracticeModal()"></div>
+  <div class="pmodal-sheet">
+    <button class="pmodal-close" onclick="closePracticeModal()" aria-label="إغلاق"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <div class="pmodal-img-wrap">
+      <img id="pmodal2-img" src="" alt="" class="pmodal-img">
+      <div class="pmodal-img-ov" aria-hidden="true"></div>
+      <div class="pmodal-img-body">
+        <div class="pmodal-cat" id="pmodal2-cat"></div>
+        <h2 class="pmodal-title" id="pmodal2-title"></h2>
+      </div>
+      <span id="pmodal2-icon" style="position:absolute;top:22px;left:22px;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--primary);display:grid;place-items:center;font-size:20px;box-shadow:var(--shadow-md)"></span>
+    </div>
+    <div class="pmodal-body">
+      <div class="pmodal-grid">
+        <div>
+          <div class="pmodal-label">نبذة عن الخدمة</div>
+          <p class="pmodal-desc" id="pmodal2-desc"></p>
+          <div class="pmodal-tags" id="pmodal2-tags"></div>
+        </div>
+        <div class="pmodal-meta-box">
+          <div class="pmodal-label" style="margin-bottom:14px">ماذا نقدّم</div>
+          <ul class="ind-list" id="pmodal2-points" style="margin:0"></ul>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary" onclick="closePracticeModal()" style="justify-content:center;width:100%">
+        <i class="fas fa-calendar-check" aria-hidden="true"></i> احجز استشارة في هذا المجال
+      </a>
+    </div>
+  </div>
+</div>
+
+
 <!-- ════════════════ FOOTER ════════════════ -->
 <footer id="footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#hero" class="wordmark" aria-label="العدل الراقي">
+        <a href="#hero" class="wordmark" aria-label="رواد القانون">
           <span class="wm-crest" aria-hidden="true">
             <svg viewBox="0 0 56 56"><rect x="1" y="1" width="54" height="54" rx="14"></rect><path d="M28 12v30M17 20h22M15 42h26M18 20l-7 16h14L18 20zm20 0l-7 16h14L38 20z"></path></svg>
           </span>
           <span class="wm-text">
-            <span class="name">العدل الراقي</span>
-            <span class="sub">PREMIUM LEGAL CONSULTANCY</span>
+            <span class="name">رواد القانون</span>
           </span>
         </a>
         <p>مكتب محاماة فاخر يقدم خدمات قانونية متكاملة للأفراد والشركات والمستثمرين، بخبرة تتجاوز 20 عاماً ونتائج مثبتة في التقاضي والتحكيم والاستشارات.</p>
@@ -1618,14 +1695,14 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
         <h4>تواصل معنا</h4>
         <div class="fcontact-info">
           <div class="fci"><i class="fas fa-location-dot" aria-hidden="true"></i><span>طريق الملك فهد، حي العليا<br>الرياض 11564، المملكة العربية السعودية</span></div>
-          <div class="fci"><i class="fas fa-phone" aria-hidden="true"></i><span dir="ltr">+966 11 204 5900</span></div>
-          <div class="fci"><i class="fas fa-envelope" aria-hidden="true"></i><span>consultation@aladel-legal.com</span></div>
+          <div class="fci"><i class="fas fa-phone" aria-hidden="true"></i><span dir="ltr">[أضف رقم الهاتف]</span></div>
+          <div class="fci"><i class="fas fa-envelope" aria-hidden="true"></i><span>[أضف البريد الإلكتروني]</span></div>
           <div class="fci"><i class="fas fa-clock" aria-hidden="true"></i><span>الأحد – الخميس<br>9:00 – 18:00</span></div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p id="footer-year">© 2026 مكتب العدل الراقي للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.</p>
+      <p id="footer-year">© 2026 مكتب رواد القانون للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.</p>
       <p><a href="#">سياسة الخصوصية</a> · <a href="#">الشروط والأحكام</a> · <a href="#">خريطة الموقع</a></p>
     </div>
   </div>
@@ -1638,7 +1715,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   <span class="wa-tooltip" id="wa-tooltip" role="tooltip">استشرنا الآن 👋</span>
   <div style="position:relative">
     <div class="wa-fab-pulse" aria-hidden="true"></div>
-    <a id="wa-fab-btn" href="https://wa.me/966112045900" class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" aria-describedby="wa-tooltip">
+    <a id="wa-fab-btn" href="#contact" class="wa-fab" aria-label="تواصل عبر واتساب" aria-describedby="wa-tooltip">
       <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
   </div>
@@ -1668,31 +1745,31 @@ const aboutCopy = {
 
 /* Data: Practice Areas (15) */
 const PRACTICE_AREAS = [
-  { cat:'شركات', icon:'fa-briefcase', title:'القانون التجاري', desc:'استشارات للشركات والتجار في النزاعات التجارية، الحوكمة، اللوائح الداخلية، وحماية المصالح التعاقدية.', tags:['شركات','تجاري'], img:'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=82' },
-  { cat:'جنائي', icon:'fa-gavel', title:'القانون الجنائي', desc:'دفاع وتحليل أدلة وتمثيل في القضايا الجنائية والبلاغات ذات الحساسية العالية بسرية تامة.', tags:['دفاع','جزائي'], img:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-scale-balanced', title:'القضايا المدنية', desc:'مطالبات وتعويضات ومسؤولية مدنية وصياغة مذكرات مبنية على وقائع موثقة وأسانيد دقيقة.', tags:['تقاضي','مدني'], img:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=82' },
-  { cat:'أفراد', icon:'fa-people-roof', title:'الأحوال الشخصية', desc:'حلول قانونية راقية في قضايا الأسرة، النفقة، الحضانة، التركات، والتسويات الودية.', tags:['أسرة','تركات'], img:'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=82' },
-  { cat:'شركات', icon:'fa-building-columns', title:'تأسيس الشركات', desc:'تأسيس ومواءمة الكيانات، اتفاقيات الشركاء، اللوائح، وتخطيط هيكل قانوني قابل للنمو.', tags:['تأسيس','حوكمة'], img:'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-file-signature', title:'العقود', desc:'صياغة ومراجعة عقود عالية الحماية تكشف الالتزامات الخفية وتقلل النزاع قبل ظهوره.', tags:['صياغة','مراجعة'], img:'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=82' },
-  { cat:'دولي', icon:'fa-chart-line', title:'الاستثمار', desc:'استشارات دخول السوق، اتفاقيات الاستثمار، الفحص القانوني، وإدارة مخاطر الصفقات.', tags:['استثمار','دولي'], img:'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-handshake-angle', title:'التحكيم', desc:'تمثيل في التحكيم التجاري، إعداد المذكرات، إدارة الأدلة، وتسويات النزاعات المعقدة.', tags:['تحكيم','تسويات'], img:'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=82' },
-  { cat:'شركات', icon:'fa-fingerprint', title:'الملكية الفكرية', desc:'حماية العلامات، المصنفات، الأسرار التجارية، واتفاقيات الترخيص والاستغلال.', tags:['علامات','براءات'], img:'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=82' },
-  { cat:'شركات', icon:'fa-coins', title:'الضرائب', desc:'مساندة قانونية في الاعتراضات، الامتثال، المراجعات الضريبية، وتحليل الأثر النظامي.', tags:['ضرائب','زكاة'], img:'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-city', title:'العقارات', desc:'نزاعات الملكية، الإيجارات، التطوير العقاري، الرهن، ومراجعة عقود البيع والاستثمار.', tags:['عقارات','تطوير'], img:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-stamp', title:'التنفيذ', desc:'متابعة أوامر وسندات التنفيذ، الحجز، المطالبات المالية، وحماية حقوق الدائن والمدين.', tags:['تنفيذ','مطالبات'], img:'https://images.unsplash.com/photo-1593115057322-e94b77572f20?auto=format&fit=crop&w=900&q=82' },
-  { cat:'تجاري', icon:'fa-file-invoice-dollar', title:'التحصيل', desc:'استرداد مستحقات الشركات والأفراد عبر مسار نظامي يبدأ بالإنذار وينتهي بالتنفيذ.', tags:['تحصيل','ديون'], img:'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=82' },
-  { cat:'أفراد', icon:'fa-user-tie', title:'قضايا العمل', desc:'تمثيل أصحاب العمل والموظفين في العقود، الفصل، المستحقات، والمخالفات العمالية.', tags:['عمالي','فصل'], img:'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=82' },
-  { cat:'دولي', icon:'fa-globe', title:'التقاضي الدولي', desc:'تنسيق النزاعات العابرة للحدود، الاختصاص القضائي، تنفيذ الأحكام، والتعاون مع مكاتب أجنبية.', tags:['دولي','اختصاص'], img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=82' },
+  { cat:'شركات', icon:'fa-briefcase', title:'القانون التجاري', desc:'استشارات للشركات والتجار في النزاعات التجارية، الحوكمة، اللوائح الداخلية، وحماية المصالح التعاقدية.', tags:['شركات','تجاري'], points:['تمثيل في النزاعات التجارية أمام المحاكم واللجان','مراجعة اللوائح الداخلية والحوكمة','حماية المصالح التعاقدية للشركات والتجار'], img:'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=82' },
+  { cat:'جنائي', icon:'fa-gavel', title:'القانون الجنائي', desc:'دفاع وتحليل أدلة وتمثيل في القضايا الجنائية والبلاغات ذات الحساسية العالية بسرية تامة.', tags:['دفاع','جزائي'], points:['الدفاع في القضايا الجنائية والبلاغات الحساسة','تحليل الأدلة وبناء استراتيجية دفاع','تمثيل كامل أمام النيابة والمحكمة'], img:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-scale-balanced', title:'القضايا المدنية', desc:'مطالبات وتعويضات ومسؤولية مدنية وصياغة مذكرات مبنية على وقائع موثقة وأسانيد دقيقة.', tags:['تقاضي','مدني'], points:['رفع ومتابعة دعاوى المطالبات والتعويضات','صياغة مذكرات مبنية على أسانيد دقيقة','تمثيل في قضايا المسؤولية المدنية'], img:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=82' },
+  { cat:'أفراد', icon:'fa-people-roof', title:'الأحوال الشخصية', desc:'حلول قانونية راقية في قضايا الأسرة، النفقة، الحضانة، التركات، والتسويات الودية.', tags:['أسرة','تركات'], points:['قضايا الأسرة والنفقة والحضانة','تقسيم التركات والتسويات الودية','استشارات قانونية بخصوصية تامة'], img:'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=82' },
+  { cat:'شركات', icon:'fa-building-columns', title:'تأسيس الشركات', desc:'تأسيس ومواءمة الكيانات، اتفاقيات الشركاء، اللوائح، وتخطيط هيكل قانوني قابل للنمو.', tags:['تأسيس','حوكمة'], points:['تأسيس الكيانات واختيار الشكل النظامي المناسب','صياغة اتفاقيات الشركاء واللوائح الداخلية','تخطيط هيكل قانوني قابل للنمو'], img:'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-file-signature', title:'العقود', desc:'صياغة ومراجعة عقود عالية الحماية تكشف الالتزامات الخفية وتقلل النزاع قبل ظهوره.', tags:['صياغة','مراجعة'], points:['صياغة عقود عالية الحماية','مراجعة العقود وكشف الالتزامات الخفية','تقليل احتمالية النزاع قبل ظهوره'], img:'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=82' },
+  { cat:'دولي', icon:'fa-chart-line', title:'الاستثمار', desc:'استشارات دخول السوق، اتفاقيات الاستثمار، الفحص القانوني، وإدارة مخاطر الصفقات.', tags:['استثمار','دولي'], points:['استشارات دخول السوق للمستثمرين','الفحص القانوني قبل الصفقات','إدارة مخاطر اتفاقيات الاستثمار'], img:'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-handshake-angle', title:'التحكيم', desc:'تمثيل في التحكيم التجاري، إعداد المذكرات، إدارة الأدلة، وتسويات النزاعات المعقدة.', tags:['تحكيم','تسويات'], points:['تمثيل كامل أمام هيئات التحكيم التجاري','إعداد المذكرات وإدارة الأدلة','تسوية النزاعات المعقدة خارج المحاكم'], img:'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=82' },
+  { cat:'شركات', icon:'fa-fingerprint', title:'الملكية الفكرية', desc:'حماية العلامات، المصنفات، الأسرار التجارية، واتفاقيات الترخيص والاستغلال.', tags:['علامات','براءات'], points:['تسجيل وحماية العلامات التجارية','حماية المصنفات والأسرار التجارية','صياغة اتفاقيات الترخيص والاستغلال'], img:'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=82' },
+  { cat:'شركات', icon:'fa-coins', title:'الضرائب', desc:'مساندة قانونية في الاعتراضات، الامتثال، المراجعات الضريبية، وتحليل الأثر النظامي.', tags:['ضرائب','زكاة'], points:['الاعتراض على القرارات الضريبية','دعم الامتثال والمراجعات الضريبية','تحليل الأثر النظامي على الأعمال'], img:'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-city', title:'العقارات', desc:'نزاعات الملكية، الإيجارات، التطوير العقاري، الرهن، ومراجعة عقود البيع والاستثمار.', tags:['عقارات','تطوير'], points:['نزاعات الملكية العقارية والإيجارات','مراجعة عقود البيع والتطوير العقاري','استشارات الرهن والاستثمار العقاري'], img:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-stamp', title:'التنفيذ', desc:'متابعة أوامر وسندات التنفيذ، الحجز، المطالبات المالية، وحماية حقوق الدائن والمدين.', tags:['تنفيذ','مطالبات'], points:['متابعة أوامر وسندات التنفيذ','إجراءات الحجز والمطالبات المالية','حماية حقوق الدائن والمدين'], img:'https://images.unsplash.com/photo-1593115057322-e94b77572f20?auto=format&fit=crop&w=900&q=82' },
+  { cat:'تجاري', icon:'fa-file-invoice-dollar', title:'التحصيل', desc:'استرداد مستحقات الشركات والأفراد عبر مسار نظامي يبدأ بالإنذار وينتهي بالتنفيذ.', tags:['تحصيل','ديون'], points:['تحصيل مستحقات الشركات والأفراد','مسار نظامي يبدأ بالإنذار الرسمي','متابعة حتى التنفيذ الكامل'], img:'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=82' },
+  { cat:'أفراد', icon:'fa-user-tie', title:'قضايا العمل', desc:'تمثيل أصحاب العمل والموظفين في العقود، الفصل، المستحقات، والمخالفات العمالية.', tags:['عمالي','فصل'], points:['تمثيل أصحاب العمل والموظفين','قضايا الفصل والمستحقات العمالية','الامتثال لأنظمة العمل ومعالجة المخالفات'], img:'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=82' },
+  { cat:'دولي', icon:'fa-globe', title:'التقاضي الدولي', desc:'تنسيق النزاعات العابرة للحدود، الاختصاص القضائي، تنفيذ الأحكام، والتعاون مع مكاتب أجنبية.', tags:['دولي','اختصاص'], points:['تنسيق النزاعات العابرة للحدود','تحديد الاختصاص القضائي المناسب','تنفيذ الأحكام والتعاون مع مكاتب أجنبية'], img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=82' },
 ];
 
 /* Data: Why Us (8) */
 const WHY_US = [
-  { icon:'fa-medal', t:'خبرة طويلة', d:'سجل متراكم في ملفات تجارية وجنائية ومدنية عالية الحساسية.' },
+  { icon:'fa-shield-halved', t:'خبرة قانونية متخصصة', d:'سجل متراكم في ملفات تجارية وجنائية ومدنية عالية الحساسية.' },
   { icon:'fa-lightbulb', t:'حلول قانونية مبتكرة', d:'نبحث عن المسار العملي الأكثر حماية، لا عن أطول طريق إجرائي.' },
   { icon:'fa-user-shield', t:'سرية تامة', d:'إجراءات داخلية صارمة لحماية المستندات والمراسلات.' },
-  { icon:'fa-bolt', t:'استجابة سريعة', d:'تقييم أولي واضح وتحديد الأولويات قبل تفاقم المخاطر.' },
+  { icon:'fa-scale-balanced', t:'استشارات موثوقة وسريعة', d:'تقييم أولي واضح وتحديد الأولويات قبل تفاقم المخاطر.' },
   { icon:'fa-people-group', t:'فريق متخصص', d:'محامون موزعون حسب التخصص لضمان عمق الرأي القانوني.' },
-  { icon:'fa-landmark', t:'تمثيل شامل', d:'خبرة في التقاضي أمام المحاكم واللجان القضائية وشبه القضائية.' },
+  { icon:'fa-gavel', t:'متابعة شاملة للعميل', d:'خبرة في التقاضي أمام المحاكم واللجان القضائية وشبه القضائية.' },
   { icon:'fa-chart-simple', t:'نتائج مثبتة', d:'مؤشرات متابعة وقياس للملفات مع تقارير موجزة للعميل.' },
   { icon:'fa-magnifying-glass-chart', t:'استشارات دقيقة', d:'تحليل قانوني ولغوي وتجاري قبل إصدار أي توصية.' },
 ];
@@ -1708,10 +1785,10 @@ const PROCESS = [
 
 /* Data: Team (4) */
 const TEAM = [
-  { name:'عبدالعزيز الراشد', role:'الشريك المدير', spec:'التقاضي التجاري والتحكيم', years:'25 سنة', email:'a.rashed@aladel-legal.com', img:im('photo-1560250097-0b93528c311a',700) },
-  { name:'نورة الفهد', role:'رئيسة الاستشارات', spec:'العقود والشركات', years:'16 سنة', email:'n.fahad@aladel-legal.com', img:im('photo-1573496359142-b8d87734a5a2',700) },
-  { name:'سلمان الدوسري', role:'محامي أول', spec:'القضايا الجنائية والتنفيذ', years:'14 سنة', email:'s.dosari@aladel-legal.com', img:im('photo-1500648767791-00dcc994a43e',700) },
-  { name:'ريم العتيبي', role:'مستشارة قانونية أولى', spec:'الملكية الفكرية وقانون العمل', years:'11 سنة', email:'r.otaibi@aladel-legal.com', img:im('photo-1580489944761-15a19d654956',700) },
+  { name:'عبدالعزيز الراشد', role:'الشريك المدير', spec:'التقاضي التجاري والتحكيم', years:'25 سنة', img:'partner-abdulaziz.jpg' },
+  { name:'نورة الفهد', role:'رئيسة الاستشارات', spec:'العقود والشركات', years:'16 سنة', img:'woman.png' },
+  { name:'سلمان الدوسري', role:'محامي أول', spec:'القضايا الجنائية والتنفيذ', years:'14 سنة', img:'man.png' },
+  { name:'ريم العتيبي', role:'مستشارة قانونية أولى', spec:'الملكية الفكرية وقانون العمل', years:'11 سنة', img:'woman.png' },
 ];
 
 /* Data: Journey */
@@ -1732,12 +1809,12 @@ const PACKAGES = [
 
 /* Data: Case Studies */
 const CASES = [
-  { id:0, img:im('photo-1454165804606-c3d57bc86b40',900), cat:'تجاري', title:'تسوية نزاع تجاري دولي بمطالبة كبرى', client:'شركة صناعية إقليمية', city:'الرياض', year:'2025', duration:'8 أشهر', team:'6 محامين', scope:'تمثيل كامل أمام هيئة التحكيم', desc:'تمثيل شركة صناعية إقليمية في نزاع تعاقدي معقد مع مورد دولي، وتحقيق تسوية ودّية حفظت للعميل أكثر من 60% من قيمة المطالبة الأصلية دون الدخول في تقاضٍ مطوّل.', tags:['تحكيم','عقود'], stats:['60% وفورات','8 أشهر','6 محامين','تسوية ودية'] },
-  { id:1, img:im('photo-1521791136064-7986c2920216',900), cat:'عقاري', title:'نزاع ملكية عقاري متعدد الأطراف', client:'مستثمر عقاري خاص', city:'جدة', year:'2024', duration:'11 شهراً', team:'4 محامون', scope:'التقاضي والتمثيل أمام المحكمة العقارية', desc:'تولّى المكتب تمثيل عميل في نزاع ملكية معقد شمل أربعة أطراف متنازعة، وانتهت القضية بحكم نهائي أثبت كامل حقوق موكلنا في الأصل العقاري محل النزاع.', tags:['عقارات','تقاضي'], stats:['4 أطراف','11 شهراً','حكم نهائي','استرداد كامل'] },
-  { id:2, img:im('photo-1589391886645-d51941baf7fb',900), cat:'تجاري', title:'اندماج استراتيجي بين شركتين تقنيتين', client:'شركة تقنية ناشئة', city:'الرياض', year:'2025', duration:'5 أشهر', team:'5 محامين', scope:'الاستشارات القانونية والعناية الواجبة', desc:'قدّم المكتب الاستشارة القانونية الكاملة لصفقة اندماج بين شركتين تقنيتين، شملت العناية الواجبة القانونية وصياغة اتفاقية الاندماج وإدارة الموافقات التنظيمية.', tags:['اندماج','شركات'], stats:['5 أشهر','عناية واجبة','موافقة كاملة','صفقة ناجحة'] },
-  { id:3, img:im('photo-1450101499163-c8848c66ca85',900), cat:'دولي', title:'تحكيم تجاري أمام مركز دولي مرموق', client:'مجموعة استثمارية', city:'الرياض', year:'2024', duration:'14 شهراً', team:'7 محامين', scope:'التمثيل الكامل أمام هيئة التحكيم الدولية', desc:'تمثيل مجموعة استثمارية سعودية في نزاع تحكيمي دولي معقد ضد شريك أجنبي، وانتهت القضية بقرار تحكيمي لصالح موكلنا بالكامل مع تعويض عن الأضرار.', tags:['تحكيم','استثمار'], stats:['14 شهراً','قرار كامل','تعويض','مركز دولي'] },
-  { id:4, img:im('photo-1521737604893-d14cc237f11d',900), cat:'جنائي', title:'دفاع في قضية جنائية معقدة', client:'رجل أعمال', city:'الدمام', year:'2025', duration:'6 أشهر', team:'3 محامين', scope:'الدفاع الجنائي الكامل أمام النيابة والمحكمة', desc:'تولّى المكتب الدفاع عن رجل أعمال في قضية جنائية ذات طابع تجاري معقد، وانتهت القضية بحكم بالبراءة الكاملة بعد إثبات عدم توفر الأركان الجرمية.', tags:['جنائي','دفاع'], stats:['براءة كاملة','6 أشهر','3 جلسات','نجاح تام'] },
-  { id:5, img:im('photo-1521791055366-0d553872125f',900), cat:'تجاري', title:'تحصيل مطالبات مالية متعثرة', client:'شركة توزيع تجاري', city:'جدة', year:'2024', duration:'4 أشهر', team:'3 محامين', scope:'إجراءات التحصيل والتنفيذ القضائي', desc:'إدارة ملف تحصيل ديون تجارية متعثرة لشركة توزيع، شمل ذلك رفع دعاوى مطالبة مالية ومتابعة التنفيذ حتى الاسترداد الكامل للمبالغ المستحقة.', tags:['تحصيل','تنفيذ'], stats:['استرداد 100%','4 أشهر','12 مدين','تنفيذ فعّال'] },
+  { id:0, img:im('photo-1454165804606-c3d57bc86b40',900), cat:'تجاري', title:'تسوية نزاع تجاري دولي بمطالبة كبرى', client:'شركة صناعية إقليمية', city:'الرياض', year:'2025', duration:'8 أشهر', team:'6 محامين', scope:'تمثيل كامل أمام هيئة التحكيم', desc:'تمثيل شركة صناعية إقليمية في نزاع تعاقدي معقد مع مورد دولي، وتحقيق تسوية ودّية حفظت للعميل أكثر من 60% من قيمة المطالبة الأصلية دون الدخول في تقاضٍ مطوّل.', challenge:'مطالبة مالية كبيرة من مورد دولي وسط تعقيد العقود متعددة الجهات القضائية.', approach:'تحليل شامل للعقد الأصلي، تفاوض مباشر مع الطرف الدولي، وإعداد بدائل تصعيد قانوني كأوراق ضغط.', tags:['تحكيم','عقود'], stats:['60% وفورات','8 أشهر','6 محامين','تسوية ودية'] },
+  { id:1, img:im('photo-1521791136064-7986c2920216',900), cat:'عقاري', title:'نزاع ملكية عقاري متعدد الأطراف', client:'مستثمر عقاري خاص', city:'جدة', year:'2024', duration:'11 شهراً', team:'4 محامون', scope:'التقاضي والتمثيل أمام المحكمة العقارية', desc:'تولّى المكتب تمثيل عميل في نزاع ملكية معقد شمل أربعة أطراف متنازعة، وانتهت القضية بحكم نهائي أثبت كامل حقوق موكلنا في الأصل العقاري محل النزاع.', challenge:'أربعة أطراف متنازعة على نفس الأصل العقاري مع مستندات ملكية متضاربة.', approach:'تتبع السجل العقاري وتحليل سلسلة الملكية، وتقديم أدلة موثقة أمام المحكمة العقارية.', tags:['عقارات','تقاضي'], stats:['4 أطراف','11 شهراً','حكم نهائي','استرداد كامل'] },
+  { id:2, img:im('photo-1589391886645-d51941baf7fb',900), cat:'تجاري', title:'اندماج استراتيجي بين شركتين تقنيتين', client:'شركة تقنية ناشئة', city:'الرياض', year:'2025', duration:'5 أشهر', team:'5 محامين', scope:'الاستشارات القانونية والعناية الواجبة', desc:'قدّم المكتب الاستشارة القانونية الكاملة لصفقة اندماج بين شركتين تقنيتين، شملت العناية الواجبة القانونية وصياغة اتفاقية الاندماج وإدارة الموافقات التنظيمية.', challenge:'توافق الهياكل القانونية والمالية بين شركتين بثقافتين مؤسسيتين مختلفتين.', approach:'عناية واجبة قانونية شاملة، وصياغة اتفاقية اندماج تحمي حقوق الأطراف وتوازن المخاطر.', tags:['اندماج','شركات'], stats:['5 أشهر','عناية واجبة','موافقة كاملة','صفقة ناجحة'] },
+  { id:3, img:im('photo-1450101499163-c8848c66ca85',900), cat:'دولي', title:'تحكيم تجاري أمام مركز دولي مرموق', client:'مجموعة استثمارية', city:'الرياض', year:'2024', duration:'14 شهراً', team:'7 محامين', scope:'التمثيل الكامل أمام هيئة التحكيم الدولية', desc:'تمثيل مجموعة استثمارية سعودية في نزاع تحكيمي دولي معقد ضد شريك أجنبي، وانتهت القضية بقرار تحكيمي لصالح موكلنا بالكامل مع تعويض عن الأضرار.', challenge:'نزاع تحكيمي عابر للحدود مع شريك أجنبي يطبّق قانونًا مغايرًا.', approach:'بناء ملف أدلة متكامل، والاستعانة بخبرة تحكيم دولي لتوجيه استراتيجية المرافعة.', tags:['تحكيم','استثمار'], stats:['14 شهراً','قرار كامل','تعويض','مركز دولي'] },
+  { id:4, img:im('photo-1521737604893-d14cc237f11d',900), cat:'جنائي', title:'دفاع في قضية جنائية معقدة', client:'رجل أعمال', city:'الدمام', year:'2025', duration:'6 أشهر', team:'3 محامين', scope:'الدفاع الجنائي الكامل أمام النيابة والمحكمة', desc:'تولّى المكتب الدفاع عن رجل أعمال في قضية جنائية ذات طابع تجاري معقد، وانتهت القضية بحكم بالبراءة الكاملة بعد إثبات عدم توفر الأركان الجرمية.', challenge:'اتهامات جنائية ذات طابع تجاري معقد تهدد سمعة الموكل ومستقبله المهني.', approach:'مراجعة دقيقة للأدلة، وإثبات عدم توفر الأركان الجرمية أمام النيابة والمحكمة.', tags:['جنائي','دفاع'], stats:['براءة كاملة','6 أشهر','3 جلسات','نجاح تام'] },
+  { id:5, img:im('photo-1521791055366-0d553872125f',900), cat:'تجاري', title:'تحصيل مطالبات مالية متعثرة', client:'شركة توزيع تجاري', city:'جدة', year:'2024', duration:'4 أشهر', team:'3 محامين', scope:'إجراءات التحصيل والتنفيذ القضائي', desc:'إدارة ملف تحصيل ديون تجارية متعثرة لشركة توزيع، شمل ذلك رفع دعاوى مطالبة مالية ومتابعة التنفيذ حتى الاسترداد الكامل للمبالغ المستحقة.', challenge:'تعدد المدينين وتعثر السداد لفترة طويلة أثّر على السيولة التشغيلية للعميل.', approach:'رفع دعاوى مطالبة منظمة ومتابعة تنفيذية صارمة حتى استرداد كامل المبالغ.', tags:['تحصيل','تنفيذ'], stats:['استرداد 100%','4 أشهر','12 مدين','تنفيذ فعّال'] },
 ];
 
 /* Data: Testimonials */
@@ -1776,6 +1853,20 @@ const ACCREDITATIONS = [
   { i:'fa-balance-scale', t:'الامتثال الدائم للأنظمة القانونية' },
   { i:'fa-handshake', t:'شريك تحكيم في مراكز دولية' },
   { i:'fa-certificate', t:'اعتماد ISO لإدارة الجودة' },
+];
+
+/* Data: Partners (real institutional partners and their logos) */
+const PARTNERS = [
+  { name:'مصرف الإنماء', logo:'alinma.png' },
+  { name:'جامعة الملك سعود', logo:'ksu.png' },
+  { name:'زين السعودية', logo:'zain.png' },
+  { name:'الجعيب', logo:'aljoaib.png' },
+  { name:'الجامعة السعودية الإلكترونية', logo:'seu.png' },
+  { name:'الهيئة العامة للطيران المدني', logo:'gaca.png' },
+  { name:'مجموعة د. سليمان الحبيب الطبية', logo:'sulaiman-al-habib.png' },
+  { name:'مركز الملك عبدالله المالي', logo:'kafd.png' },
+  { name:'صندوق الاستثمارات العامة', logo:'pif.png' },
+  { name:'الشركة السعودية للصناعات العسكرية', logo:'sami.png' },
 ];
 
 /* Data: FAQs */
@@ -1845,7 +1936,7 @@ const MARQUEE_ITEMS = ['غرفة التجارة الرياض','الهيئة ال
 window.addEventListener('load', () => setTimeout(() => el('loader')?.classList.add('hide'), 400));
 
 /* Footer year */
-el('footer-year') && (el('footer-year').textContent = `© ${new Date().getFullYear()} مكتب العدل الراقي للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.`);
+el('footer-year') && (el('footer-year').textContent = `© ${new Date().getFullYear()} مكتب رواد القانون للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.`);
 
 /* ===========================================================
    HEADER BEHAVIORS
@@ -1872,12 +1963,14 @@ function initHeader(){
 /* Active nav link */
 function initActiveNav(){
   const links = $$('#nav-links a[href^="#"]');
+  const mobileLinks = $$('#mobile-menu a[href^="#"]');
   const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
   if (!('IntersectionObserver' in window)) return;
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
+        mobileLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
       }
     });
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
@@ -1886,21 +1979,35 @@ function initActiveNav(){
 
 /* Mobile menu */
 function initMobile(){
-  const btn = el('hamburger'), panel = el('mobile-menu');
+  const btn = el('hamburger'), panel = el('mobile-menu'), header = el('hdr');
   if (!btn || !panel) return;
-  btn.addEventListener('click', () => {
+  const positionPanel = () => {
+    if (header) panel.style.top = (header.getBoundingClientRect().bottom + 10) + 'px';
+  };
+  const closeMenu = () => {
+    panel.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const open = !panel.classList.contains('open');
+    if (open) positionPanel();
     panel.classList.toggle('open', open);
     btn.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', String(open));
     document.body.style.overflow = open ? 'hidden' : '';
   });
-  $$('a', panel).forEach(link => link.addEventListener('click', () => {
-    panel.classList.remove('open');
-    btn.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }));
+  $$('a', panel).forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('click', e => {
+    if (panel.classList.contains('open') && !panel.contains(e.target) && !btn.contains(e.target)) closeMenu();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && panel.classList.contains('open')) closeMenu(); });
+  addEventListener('resize', () => {
+    if (innerWidth > 1180 && panel.classList.contains('open')) closeMenu();
+    else if (panel.classList.contains('open')) positionPanel();
+  });
 }
 
 /* Search popup */
@@ -2041,8 +2148,10 @@ function renderPractice(filter = 'all'){
   const grid = el('practice-grid');
   if (!grid) return;
   const list = filter === 'all' ? PRACTICE_AREAS : PRACTICE_AREAS.filter(p => p.cat === filter);
-  grid.innerHTML = list.map((p, i) => `
-    <article class="practice-card rv" style="transition-delay:${i * 40}ms">
+  grid.innerHTML = list.map((p, i) => {
+    const realIdx = PRACTICE_AREAS.indexOf(p);
+    return `
+    <article class="practice-card rv" style="transition-delay:${i * 40}ms" onclick="openPracticeModal(${realIdx})" onkeydown="if(event.key==='Enter'){openPracticeModal(${realIdx})}" tabindex="0" role="button" aria-label="${p.title} — عرض التفاصيل">
       <div class="pc-media">
         <img src="${p.img}" alt="${p.title} — ${p.desc}" loading="lazy">
       </div>
@@ -2050,11 +2159,33 @@ function renderPractice(filter = 'all'){
       <div class="practice-card-inner">
         <div class="pc-title">${p.title}</div>
         <div class="pc-desc">${p.desc}</div>
-        <a href="#contact" class="pc-arrow">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+        <span class="pc-arrow">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></span>
       </div>
-    </article>`).join('');
+    </article>`;
+  }).join('');
   initRevealFor(grid);
 }
+
+function openPracticeModal(idx){
+  const p = PRACTICE_AREAS[idx]; if (!p) return;
+  const m = el('practice-modal');
+  el('pmodal2-img').src = p.img; el('pmodal2-img').alt = p.title;
+  el('pmodal2-icon').innerHTML = `<i class="fas ${p.icon}" aria-hidden="true"></i>`;
+  el('pmodal2-cat').textContent = p.cat;
+  el('pmodal2-title').textContent = p.title;
+  el('pmodal2-desc').textContent = p.desc;
+  el('pmodal2-points').innerHTML = p.points.map(pt => `<li>${pt}</li>`).join('');
+  el('pmodal2-tags').innerHTML = p.tags.map(t => `<span class="pmodal-tag">${t}</span>`).join('');
+  m.classList.add('open'); m.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+function closePracticeModal(){
+  const m = el('practice-modal');
+  m.classList.remove('open'); m.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+window.openPracticeModal = openPracticeModal;
+window.closePracticeModal = closePracticeModal;
 
 function renderWhy(){
   el('why-grid') && (el('why-grid').innerHTML = WHY_US.map((w, i) => `
@@ -2091,9 +2222,9 @@ function renderTeam(){
             <span><i class="fa-solid fa-envelope"></i></span>
           </div>
           <div class="team-socials">
-            <a href="mailto:${m.email}" aria-label="البريد الإلكتروني ${m.name}"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#contact" aria-label="البريد الإلكتروني ${m.name}"><i class="fa-solid fa-envelope"></i></a>
             <a href="#" aria-label="LinkedIn ${m.name}"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="tel:+966112045900" aria-label="اتصل بـ ${m.name}"><i class="fa-solid fa-phone"></i></a>
+            <a href="#contact" aria-label="اتصل بـ ${m.name}"><i class="fa-solid fa-phone"></i></a>
           </div>
         </div>
       </div>
@@ -2150,6 +2281,11 @@ function renderAccreditations(){
     <span class="accred-badge"><i class="fa-solid ${a.i}"></i> ${a.t}</span>`).join(''));
 }
 
+function renderPartners(){
+  el('partners-grid') && (el('partners-grid').innerHTML = PARTNERS.map(p => `
+    <div class="partner-badge"><img src="logos/${p.logo}" alt="${p.name}" loading="lazy"></div>`).join(''));
+}
+
 function renderMarquee(){
   const track = el('marquee-track');
   if (!track) return;
@@ -2185,6 +2321,8 @@ function openCaseModal(id){
   el('cmodal-cat').textContent = c.cat;
   el('cmodal-title').textContent = c.title;
   el('cmodal-desc').textContent = c.desc;
+  el('cmodal-challenge').textContent = c.challenge;
+  el('cmodal-approach').textContent = c.approach;
   el('cmodal-client').textContent = c.client;
   el('cmodal-city').textContent = c.city;
   el('cmodal-year').textContent = c.year;
@@ -2328,7 +2466,7 @@ window.openInsightModal = openInsightModal;
 window.closeInsightModal = closeInsightModal;
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeCaseModal(); closeInsightModal(); }
+  if (e.key === 'Escape') { closeCaseModal(); closeInsightModal(); closePracticeModal(); }
 });
 
 /* ===========================================================
@@ -2445,6 +2583,7 @@ function init(){
   renderCases('all');
   renderTestimonials();
   renderAccreditations();
+  renderPartners();
   renderIndustries();
   renderFaq();
   renderInsights();
