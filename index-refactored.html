@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0F3D2E">
+  <title>رواد القانون | مكتب محاماة عالمي رائد — استشارات وتمثيل قانوني فاخر</title>
+  <meta name="description" content="مكتب رواد القانون للمحاماة والاستشارات القانونية. خدمات قانونية فاخرة للأفراد والشركات بخبرة تتجاوز 20 عاماً.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="/">
+  
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-EvBWYklapLDnqjenn/KfAVtzwJv4ZI2BU4xQ3J7WEVPL1ztCqYJxLhKk5dH3fBkSB1i6DcjKLXqiNTe8Vblpw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Schema.org markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "مكتب رواد القانون للمحاماة والاستشارات القانونية",
+    "alternateName": "Lexora Law Firm",
+    "description": "مكتب محاماة فاخر يقدم خدمات قانونية متكاملة للأفراد والشركات والمستثمرين",
+    "url": "https://lexora-rho-rust.vercel.app",
+    "priceRange": "$$$",
+    "areaServed": "SA",
+    "serviceType": ["التقاضي", "التحكيم", "القانون التجاري", "العقود", "الملكية الفكرية"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+  
+  <!-- UI PRIMITIVES -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-crest">ع</div>
+    <span class="loader-label">رواد القانون</span>
+  </div>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div class="mouse-glow" aria-hidden="true"></div>
+  
+  <!-- Theme initialization script (prevents FOUC) -->
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e){}
+    })();
+  </script>
+  
+  <!-- HEADER -->
+  <header id="hdr" role="banner">
+    <div class="container">
+      <div class="hdr-inner">
+        <a href="#hero" class="wordmark" aria-label="مكتب رواد القانون - الصفحة الرئيسية">
+          <span class="wm-crest" aria-hidden="true">
+            <svg viewBox="0 0 56 56"><rect x="1" y="1" width="54" height="54" rx="14"></rect><path d="M28 12v30M17 20h22M15 42h26M18 20l-7 16h14L18 20zm20 0l-7 16h14L38 20z"></path></svg>
+          </span>
+          <span class="wm-text">
+            <span class="name">رواد القانون</span>
+          </span>
+        </a>
+        
+        <nav id="nav-links" aria-label="التنقل الرئيسي">
+          <a href="#about">من نحن</a>
+          <a href="#practice">مجالات الممارسة</a>
+          <a href="#team">فريقنا</a>
+          <a href="#cases">دراسات الحالة</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+        
+        <div class="hdr-actions">
+          <button class="icon-btn ripple" id="searchOpen" aria-label="فتح البحث"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+          <a href="#contact" class="hdr-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> احجز استشارة</a>
+          <button id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" role="navigation" aria-label="قائمة الجوال">
+      <div class="mnav-grid">
+        <a href="#about" class="mnav-item"><i class="fa-solid fa-building" aria-hidden="true"></i><span>من نحن</span></a>
+        <a href="#practice" class="mnav-item"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span>مجالات الممارسة</span></a>
+        <a href="#team" class="mnav-item"><i class="fa-solid fa-users" aria-hidden="true"></i><span>فريقنا</span></a>
+        <a href="#cases" class="mnav-item"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span>دراسات الحالة</span></a>
+        <a href="#contact" class="mnav-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>تواصل</span></a>
+      </div>
+      <a href="#contact" class="btn-primary mnav-cta"><i class="fa-solid fa-calendar-check"></i> احجز استشارة</a>
+    </div>
+  </header>
+  
+  <!-- SEARCH POPUP -->
+  <div id="search-popup" role="dialog" aria-modal="true" aria-labelledby="searchTitle" aria-hidden="true">
+    <div class="search-card">
+      <button class="search-close" id="searchClose" aria-label="إغلاق البحث"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <span class="eyebrow wh">بحث قانوني</span>
+      <h2 id="searchTitle" class="search-title">ابحث في خدماتنا ورؤانا القانونية</h2>
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" class="search-input" id="siteSearch" placeholder="جرّب: عقود، تحكيم، ملكية فكرية..." autocomplete="off" aria-describedby="searchHelp">
+      </div>
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </div>
+  </div>
+  
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section id="hero" aria-label="Hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-seal" aria-hidden="true"></div>
+      
+      <div class="hero-body">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-badge"><span class="dot" aria-hidden="true"></span> مكتب محاماة معتمد — الرياض</div>
+            <h1 class="hero-title">التميّز في <span>المرافعة</span><br>والدقة في الاستشارة</h1>
+            <p class="hero-desc">شركة محاماة رائدة تُقدّم حلولاً قانونية متكاملة بمستوى عالٍ من الاحترافية والالتزام.</p>
+            <div class="hero-btns">
+              <a href="#contact" class="btn-primary ripple magnetic">اتصل الآن <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- STATS SECTION -->
+    <section id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <div class="stats-head">
+          <div>
+            <div class="eyebrow rv">إنجازاتنا بالأرقام</div>
+            <h2 id="stats-heading" class="section-title rv" style="transition-delay:.1s">التزام يُترجَم<br><em>إلى نتائج ملموسة</em></h2>
+          </div>
+        </div>
+        <div class="stats-grid rv" style="transition-delay:.2s" id="stats-grid"></div>
+      </div>
+    </section>
+    
+    <!-- WHY US SECTION -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="eyebrow wh rv">لماذا رواد القانون</div>
+        <h2 id="why-heading" class="section-title wh rv" style="transition-delay:.1s;max-width:560px">ما يميّزنا عن<br><em>غيرنا من المكاتب</em></h2>
+        <div class="why-grid rv" style="transition-delay:.15s" id="why-grid"></div>
+      </div>
+    </section>
+    
+    <!-- PROCESS SECTION -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="rv" style="text-align:center;max-width:640px;margin:0 auto 36px">
+          <div class="eyebrow" style="margin-bottom:14px;justify-content:center">منهجية العمل</div>
+          <h2 id="process-heading" class="section-title">مسار قانوني واضح<br><em>من الاستشارة إلى النتيجة</em></h2>
+        </div>
+        <div class="process-grid rv" style="transition-delay:.1s" id="process-grid"></div>
+      </div>
+    </section>
+    
+    <!-- TEAM SECTION -->
+    <section id="team" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="eyebrow rv">الفريق القانوني</div>
+        <h2 id="team-heading" class="section-title rv" style="transition-delay:.1s">محامون يمثّلون<br><em>معيار التميّز</em></h2>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+    
+    <!-- ACCREDITATIONS SECTION -->
+    <section id="accreditations" aria-labelledby="accreditations-heading">
+      <div class="container">
+        <div class="eyebrow wh rv" style="margin-bottom:14px;justify-content:center">الموثوقية المهنية</div>
+        <h2 id="accreditations-heading" class="section-title wh rv" style="transition-delay:.1s;text-align:center;margin:0 auto 40px;max-width:560px">اعتمادات<br><em>وعضويات مهنية</em></h2>
+        <div class="accred-grid rv" style="transition-delay:.15s" id="accred-grid"></div>
+      </div>
+    </section>
+    
+    <!-- CONTACT SECTION -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="rv" style="margin-bottom:48px;text-align:center">
+          <div class="eyebrow" style="margin-bottom:14px;justify-content:center">تواصل معنا</div>
+          <h2 id="contact-heading" class="section-title">نحن هنا<br><em>للاستماع إليكم</em></h2>
+        </div>
+        <div class="contact-info-card rv-l">
+          <div class="info-block"><i class="fa-solid fa-phone" aria-hidden="true"></i><div><div class="info-label">الهاتف الرئيسي</div><div class="info-val" dir="ltr">[أضف رقم الهاتف]</div></div></div>
+          <div class="info-block"><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><div class="info-label">البريد الإلكتروني</div><div class="info-val">[أضف البريد الإلكتروني]</div></div></div>
+          <div class="info-block"><i class="fa-regular fa-clock" aria-hidden="true"></i><div><div class="info-label">ساعات العمل</div><div class="info-val">الأحد – الخميس: 9 صباحاً - 6 مساءً</div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="wordmark" aria-label="رواد القانون">
+            <span class="wm-crest" aria-hidden="true">
+              <svg viewBox="0 0 56 56"><rect x="1" y="1" width="54" height="54" rx="14"></rect><path d="M28 12v30M17 20h22M15 42h26M18 20l-7 16h14L18 20zm20 0l-7 16h14L38 20z"></path></svg>
+            </span>
+            <span class="wm-text">
+              <span class="name">رواد القانون</span>
+            </span>
+          </a>
+          <p>مكتب محاماة فاخر يقدم خدمات قانونية متكاملة للأفراد والشركات والمستثمرين، بخبرة تتجاوز 20 عاماً.</p>
+        </div>
+        
+        <div class="fcol">
+          <h4>روابط سريعة</h4>
+          <ul class="flinks">
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#team">الفريق</a></li>
+            <li><a href="#contact">تواصل</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p id="footer-year">© 2026 مكتب رواد القانون. جميع الحقوق محفوظة.</p>
+        <p><a href="#">سياسة الخصوصية</a> · <a href="#">الشروط والأحكام</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- FLOATING BUTTONS -->
+  <button id="scroll-top" type="button" aria-label="العودة للأعلى"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+  
+  <!-- Scripts (async for better performance) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
