@@ -740,7 +740,7 @@ section{padding:var(--s7) 0;position:relative}
 ════════════════════════════════════════════════════════════════ */
 #map-section{background:var(--bg)}
 .map-card{position:relative;border-radius:var(--r-xl);overflow:hidden;min-height:420px;box-shadow:var(--shadow-xl);border:1px solid var(--border)}
-.map-card iframe{width:100%;height:420px;border:0;filter:grayscale(.85) contrast(1.06) invert(.88);opacity:.92}
+.map-card iframe{width:100%;height:420px;border:0;opacity:.92}
 .map-floating{position:absolute;right:26px;bottom:26px;padding:20px 24px;border-radius:var(--r-md);background:rgba(7,33,24,.86);backdrop-filter:blur(8px);color:#fff;max-width:320px;border:1px solid var(--border-dark)}
 .map-floating strong{display:block;color:var(--gold-light);font-size:14px;margin-bottom:6px}
 .map-floating span{color:rgba(255,255,255,.7);font-size:12.5px;line-height:1.7}
