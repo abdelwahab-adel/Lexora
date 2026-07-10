@@ -467,7 +467,6 @@ function renderWhy(){
   el('why-grid') && (el('why-grid').innerHTML = WHY_US.map((w, i) => `
     <div class="why-card">
       <div class="why-icon"><i class="fas ${w.icon}" aria-hidden="true"></i></div>
-      <div class="why-num">0${i + 1}</div>
       <div class="why-title">${w.t}</div>
       <div class="why-desc">${w.d}</div>
     </div>`).join(''));
@@ -477,7 +476,6 @@ function renderProcess(){
   el('process-grid') && (el('process-grid').innerHTML = PROCESS.map(p => `
     <article class="process-card">
       <div class="process-icon"><i class="${p.icon}" aria-hidden="true"></i></div>
-      <span class="process-num">${p.n}</span>
       <div class="process-title">${p.t}</div>
       <div class="process-desc">${p.d}</div>
     </article>`).join(''));
@@ -520,10 +518,8 @@ function renderIndustries(){
   el('industries-grid') && (el('industries-grid').innerHTML = INDUSTRIES.map((ind, i) => `
     <div class="industry-card rv" style="transition-delay:${i * 40}ms">
       <div class="ind-top">
-        <span class="ind-eyebrow">قطاع</span>
-        <span class="ind-num">${String(i + 1).padStart(2,'0')}</span>
+        <span class="ind-eyebrow">${ind.title}</span>
       </div>
-      <div class="ind-title">${ind.title}</div>
       <div class="ind-desc">${ind.desc}</div>
       <div class="ind-divider"></div>
       <ul class="ind-list">${ind.items.map(it => `<li>${it}</li>`).join('')}</ul>
