@@ -907,7 +907,7 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
   .wm-crest{width:38px;height:38px;flex-shrink:0}
   .wm-crest svg{width:23px;height:23px}
   .wm-text{min-width:0}
-  .wm-text .name{font-size:clamp(13px,4.2vw,17px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:44vw}
+  .wm-text .name{font-size:clamp(13px,3.2vw,17px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:44vw}
   .hdr-actions{gap:6px}
   .icon-btn{width:38px;height:38px}
   #hamburger{width:38px;height:38px}
