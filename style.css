@@ -63,7 +63,7 @@
 
   /* Gradients */
   --grad-navy: linear-gradient(160deg,#072118 0%,#0F3D2E 60%,#04140D 100%);
-  --grad-gold: #A8813C ;
+  --grad-gold: #D9B56B; 
   --grad-line: linear-gradient(90deg,transparent 0%,var(--gold) 50%,transparent 100%);
 
   /* Container */
