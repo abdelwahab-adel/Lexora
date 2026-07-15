@@ -295,7 +295,7 @@ section{padding:var(--s7) 0;position:relative}
 }
 .float-1{top:30%;left:5%;animation:floatY 5s ease-in-out infinite; left: 10vw;
     top: 32vh;
-}}
+}
 .float-2{bottom:18%;left:8%;animation:floatY 5s ease-in-out infinite reverse;animation-delay:1s}
 .float-3{top:38%;right:6%;animation:floatY 6s ease-in-out infinite;animation-delay:.6s}
 @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
@@ -883,8 +883,8 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 }
 @media(max-width:820px){
   .container{padding:0 22px;width:min(100% - 28px, 1320px)}
-  #hdr{padding:18px 0}
-  #hdr.scrolled{padding:12px 0}
+  #hdr{padding:18px 0 ; }
+  #hdr.scrolled{padding:12px 0 ; }
   section{padding:var(--s6) 0}
   .hero{min-height:auto;padding:60px 0 40px}
   .hero-inner{text-align:center}
@@ -926,6 +926,186 @@ footer::before{content:"";position:absolute;left:-10%;top:-30%;width:520px;heigh
 .glow-effect{position:relative}
 .glow-effect::after{content:"";position:absolute;inset:-1px;border-radius:inherit;background:var(--grad-gold);z-index:-1;filter:blur(18px);opacity:.5;transition:opacity .35s}
 .glow-effect:hover::after{opacity:.85}
+
+/* ════════════════════════════════════════════════════════════════
+   37. MOBILE-FIRST HARDENING — منع أي Horizontal Scroll + دعم كامل للهواتف
+════════════════════════════════════════════════════════════════ */
+html,body{max-width:100%;overflow-x:hidden}
+*{min-width:0}
+.container,section,header,footer,main{max-width:100vw}
+img,svg,video,iframe,canvas{max-width:100%}
+
+/* Touch targets: كل عنصر قابل للنقر لا يقل عن 44px */
+@media(max-width:1180px){
+  a,button,.tab-btn,.pfbtn,.chip-btn,.mnav-item,.fsocials a,.contact-socials a{-webkit-tap-highlight-color:transparent}
+  #hamburger,.icon-btn,.pmodal-close,.search-close,#scroll-top,.wa-fab{min-width:44px;min-height:44px}
+  .hdr-cta,.btn-primary,.btn-ghost,.btn-outline,.urgent-submit,.btn-next,.btn-prev,.btn-submit,.newsletter-btn,.pfbtn,.chip-btn,.tab-btn{min-height:46px}
+}
+
+/* منع تكبير الحقول تلقائياً في iOS (Safari يكبّر إذا كان font-size أقل من 16px) */
+@media(max-width:820px){
+  input,select,textarea,.field input,.field select,.field textarea,
+  .urgent-field input,.urgent-field select,.newsletter-row input,
+  .search-input,#faq-search{font-size:16px !important}
+}
+
+/* HEADER — تصغير تدريجي */
+@media(max-width:1180px){
+  .hdr-inner{gap:14px}
+}
+@media(max-width:820px){
+  #hdr{padding:16px 0}
+  #hdr.scrolled{padding:12px 0}
+}
+@media(max-width:480px){
+  .wm-crest{width:40px;height:40px;border-radius:11px}
+  .wm-crest svg{width:24px;height:24px}
+  .wm-text .name{font-size:0px}
+  .icon-btn{width:40px;height:40px}
+  #hamburger{width:40px;height:40px}
+  .hdr-actions{gap:8px}
+}
+
+/* MOBILE MENU — تأكيد التموضع وعدم الخروج عن الشاشة */
+@media(max-width:480px){
+  #mobile-menu{top:76px;width:min(94vw,360px);max-height:calc(100vh - 96px);border-radius:18px;padding:16px}
+  .mnav-grid{gap:8px}
+  .mnav-item{min-height:74px;padding:12px 6px;font-size:11.5px}
+  .mnav-item i{font-size:16px}
+}
+
+/* SEARCH POPUP */
+@media(max-width:640px){
+  #search-popup{padding:16px;padding-top:9vh}
+  .search-card{padding:22px 18px;border-radius:var(--r-lg)}
+  .search-title{font-size:clamp(18px,5.6vw,24px);margin:6px 0 16px}
+  .search-input-wrap{padding:13px 15px}
+  .search-close{width:38px;height:38px;top:12px;left:12px}
+}
+
+/* HERO */
+@media(max-width:900px){
+  #hero{padding:130px 0 70px}
+  .hero-body{padding-top:0}
+  .hero-stats{grid-template-columns:repeat(2,1fr);margin-top:56px}
+}
+@media(max-width:600px){
+  #hero{padding:118px 0 56px;min-height:auto}
+  .hero-title{font-size:clamp(1.9rem,9.5vw,2.8rem);line-height:1.22}
+  .hero-desc{font-size:15.5px;line-height:1.8;margin-bottom:28px}
+  .hero-btns{width:100%}
+  .hero-btns .btn-primary,.hero-btns .btn-ghost{width:100%;justify-content:center;text-align:center}
+  .hero-trust{gap:14px;margin-top:28px}
+  .hero-seal{opacity:.22}
+  .float-card{display:none}
+}
+
+/* URGENT REQUEST */
+@media(max-width:820px){
+  .urgent-card{padding:26px 20px}
+  .urgent-title{font-size:clamp(20px,6vw,26px)}
+}
+
+/* STATS / ABOUT */
+@media(max-width:600px){
+  .stats-head{gap:20px}
+  .about-badge{width:88px;height:88px;top:-16px;right:-12px}
+  .about-badge b{font-size:19px}
+  .about-img-secondary{width:42%;bottom:-24px;left:-16px;border-width:5px}
+  .about-features{grid-template-columns:1fr;gap:12px}
+  .about-tabs{gap:6px}
+  .tab-btn{padding:9px 14px;font-size:12px}
+}
+
+/* PARTNER */
+@media(max-width:600px){
+  .partner-portrait img{height:340px}
+  .partner-portrait figcaption{padding:14px;right:16px;left:16px;bottom:16px}
+  .partner-metrics{gap:10px}
+  .partner-copy blockquote{padding:20px !important;font-size:14px !important}
+}
+
+/* CARDS: TEAM / PRACTICE / CASES / INDUSTRIES / WHY / INSIGHTS */
+@media(max-width:600px){
+  .practice-card{height:400px}
+  .team-card,.ccard,.ins-card{border-radius:var(--r-md)}
+  .practice-card-inner{padding:0 20px 22px}
+  .team-info,.ccard-body{padding:16px}
+}
+
+/* PACKAGES */
+@media(max-width:600px){
+  .package-card{padding:28px 22px}
+}
+
+/* TESTIMONIALS */
+@media(max-width:600px){
+  .tst-slide{padding:0;gap:26px}
+  .tst-mark{font-size:3.4rem;top:12px;right:18px}
+}
+
+/* FORMS — CONTACT / URGENT / NEWSLETTER */
+@media(max-width:600px){
+  .contact-info-card{padding:30px 22px}
+  .form-card{padding:24px 18px}
+  .form-header{flex-wrap:wrap;gap:8px}
+  .field-row{grid-template-columns:1fr}
+  .chips.c3,.chips.c4{grid-template-columns:1fr 1fr}
+  .form-nav{gap:10px}
+  .btn-prev,.btn-next,.btn-submit{flex:1;padding:14px 12px}
+  .newsletter-row{flex-wrap:wrap}
+  .newsletter-row input{width:100%}
+  .newsletter-row .newsletter-btn{width:100%}
+}
+@media(max-width:380px){
+  .chips.c3,.chips.c4{grid-template-columns:1fr}
+}
+
+/* MAP */
+@media(max-width:600px){
+  .map-card iframe{height:300px !important}
+  .map-card{min-height:300px}
+  .map-floating{position:static;margin-top:14px;width:100%}
+}
+
+/* MODALS */
+@media(max-width:700px){
+  .pmodal-sheet{margin:0;max-height:100vh;height:100%;border-radius:0;width:100%}
+  .pmodal-body{padding:22px 18px}
+  .pmodal-img-body{padding:20px}
+  .pmodal-title{font-size:19px}
+  .pmodal-meta-box{padding:16px}
+}
+
+/* FOOTER */
+@media(max-width:600px){
+  .footer-grid{gap:34px}
+  .footer-bottom{flex-direction:column;text-align:center;justify-content:center}
+  .fcol h4{margin-bottom:15px}
+}
+
+/* FLOATING BUTTONS — safe-area + عدم التداخل */
+@media(max-width:600px){
+  #scroll-top{width:44px;height:44px;bottom:calc(18px + env(safe-area-inset-bottom));left:18px}
+  .wa-fab-wrap{bottom:calc(18px + env(safe-area-inset-bottom));right:18px}
+  .wa-fab{width:52px;height:52px;font-size:24px}
+  .wa-fab-pulse{width:52px;height:52px}
+}
+
+/* SECTION SPACING — تدرّج أفضل للهواتف الصغيرة */
+@media(max-width:480px){
+  section{padding:52px 0}
+  .section-title{font-size:clamp(1.6rem,8vw,2.1rem)}
+  .section-desc{font-size:14.5px}
+  .eyebrow{font-size:11px;letter-spacing:.16em}
+}
+
+/* منع خروج أي جدول/عنصر عريض عن الشاشة */
+@media(max-width:480px){
+  .btn-primary,.btn-ghost,.btn-outline{padding-inline:22px;font-size:13.5px}
+  .cta-btns,.hero-btns{flex-direction:column;align-items:stretch}
+  .cta-btns a,.hero-btns a{text-align:center;justify-content:center}
+}
 
 .hdr-cta, .btn-primary, .btn-ghost, .btn-outline, .urgent-submit, .btn-next, .btn-submit, .newsletter-btn, .pkg-cta {
     display: inline-flex;
